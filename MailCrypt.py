@@ -130,7 +130,7 @@ if __name__ == "__main__":
     #print(f"Public Key (e, n): ({e}, {n})")
 
     sender = Sender(rsa)
-    ciphertext, encrypted_key, signature = sender.send_message()
+    ciphertext, encrypted_key, signature = sender.send_message() 
 
     receiver = Receiver(rsa)
     receiver.receive_message(ciphertext, encrypted_key, signature)
